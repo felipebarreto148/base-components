@@ -1,6 +1,6 @@
 {
   "name": "my-base-components",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/my-base-components.ssr.js",
   "browser": "dist/my-base-components.esm.js",
@@ -9,7 +9,8 @@
   "types": "dist/types/src/entry.esm.d.ts",
   "files": [
     "dist/*",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "src/types/*.ts"
   ],
   "sideEffects": false,
   "scripts": {
