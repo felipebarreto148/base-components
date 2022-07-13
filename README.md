@@ -1,2 +1,2 @@
-<h1>My Base Components</h1>
-<p>Uma biblioteca de componentes VueJs usada e criada por mim.</p>
+<h1 align="center">My Base Components</h1>
+<p align="center">Uma biblioteca de componentes VueJs usada e criada por mim.</p>
