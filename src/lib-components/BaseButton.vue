@@ -1,6 +1,7 @@
 <template>
   <button :style="styleSheet" @click="$emit('clicked')">
-    <slot />
+    <slot v-if="!loading"/>
+    <mdicon v-else name="loading" spin />
   </button>
 </template>
 
@@ -18,6 +19,11 @@ export default Vue.extend({
       type: String,
       default: () => "black"
     },
+    loading: {
+      type: Boolean,
+      required: false,
+      default: () => false
+    }
   },
   computed: {
     styleSheet(): BaseButtonProps{
