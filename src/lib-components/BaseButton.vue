@@ -1,7 +1,9 @@
 <template>
   <button :style="styleSheet" @click="$emit('clicked')">
+    <slot name="prepend"/>
     <slot v-if="!loading"/>
     <mdicon v-else name="loading" spin />
+    <slot name="append"/>
   </button>
 </template>
 
@@ -46,6 +48,9 @@ button {
   transition: ease-in 200ms;
   font: 500 18px 'Fira Code', monospace;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 button:hover {
