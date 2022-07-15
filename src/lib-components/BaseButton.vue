@@ -50,7 +50,7 @@ button {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 button:hover {
